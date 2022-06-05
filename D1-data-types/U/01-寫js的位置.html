@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Internal Script -->
+    <script>
+        console.log('js 可以寫在這裡');
+    </script>
+
+    <!-- External scripts in the head: -->
+    <script src="./js/intro.js"></script>
+        <!-- html 開始編譯的時候就直接載入 js -->
+        <script src="./js/intro.js" async></script>
+        <!-- 載入完 html 之後才載入 js -->
+        <script src="./js/intro.js" defer></script>  
+    
+</head>
+<body>
+    <!-- Inline Script -->
+    <script>
+        console.log('js 也可以寫在這裡');
+    </script>
+
+    <!-- External scripts in the body: -->
+    <script src="./js/intro.js"></script>
+</body>
+</html>
