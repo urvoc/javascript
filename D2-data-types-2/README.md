@@ -114,6 +114,11 @@ console.log(num)  // min 0 and max 10
 let randomNum = Math.random()       // 0 ~ 0.999
 randomNum = randomNum * 11          // 0 ~ 10.99
 randomNum = Math.floor(randomNum)   // 0 ~ 10
+
+// 如果要取得某個區間整數
+// Math.floor(Math.random() * (max - min + 1)) + min
+let a =  Math.floor(Math.random() * (50 - 5 + 1)) + 5;
+console.log(`5 ～ 50 is ${a}`)
 ```
 
 ## 字串 - 特殊字符及方法
@@ -289,6 +294,10 @@ console.log(+'10.6') // 10.6
 - 取得 0~255 的隨機整數
 - 隨機取得 `我要成為海賊王` 中的其中一個字
 
+
+## 複習與自學
+- 瀏覽所有 [Math 方法](https://www.programiz.com/javascript/library/math/abs)
+- 瀏覽所有 [String 方法](https://www.programiz.com/javascript/library/string/includes)
 ## 作業
 
 [練習資料型態應用](assignment.md)
