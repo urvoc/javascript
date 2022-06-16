@@ -53,4 +53,19 @@ console.log(random);
 
 console.log(`sushi`.includes(`su`));
 let str11=`我愛吃巧克力`;
-console.log(str11.replace(`我愛吃巧克力`,`你愛吃糖果`));
+console.log(str11.replace(`我`,`你`).replace(`巧克力`,`糖果`));
+let str12=`我要成為海賊王` ;
+console.log(`index為:` + str12.indexOf('海'));
+let str13=`魯夫愛肉、娜美愛錢、索隆愛睡覺`;
+console.log(str13.match(/愛/gi)) 
+
+let str16 =`魯夫愛肉！娜美愛錢！索隆愛睡覺！`;
+console.log(`愛 出現次數為：`+(str16.match(/愛/gi)).length);
+
+let str17=``;
+console.log(str17.concat(`魯夫愛肉`, `娜美愛錢`));
+
+let work =`小智每個月賺 5000 元，年終獎金 10000 元，每月 15000 打道館獎金`;
+let num = work.match(/\d+/gi);
+let pay =parseInt(num[0]*12)+parseInt(num[1])+parseInt(num[2]*12);
+console.log(work.concat(`年收為：`, pay ));
