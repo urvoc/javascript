@@ -66,6 +66,7 @@ let str17=``;
 console.log(str17.concat(`魯夫愛肉`, `娜美愛錢`));
 
 let work =`小智每個月賺 5000 元，年終獎金 10000 元，每月 15000 打道館獎金`;
-let num = work.match(/\d+/gi);
+let num = work.match( gi);  // 字串.match() 會給你一個陣列
+console.log('num', num);
 let pay =parseInt(num[0]*12)+parseInt(num[1])+parseInt(num[2]*12);
 console.log(work.concat(`年收為：`, pay ));
